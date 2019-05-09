@@ -1,12 +1,12 @@
 // Making the photobooth/ webcam look cool and not creepy at all!
 
-let turkey;
+let photobooth;
 
 function setup() {
   createCanvas(500, 500);
-  turkey = createCapture('VIDEO', captureCallback);
-  turkey.hide();
-  turkey.elt.muted = true;
+  photobooth = createCapture('VIDEO', captureCallback);
+  photobooth.hide();
+  photobooth.elt.muted = true;
 }
 
 function captureCallback(s) {
@@ -15,7 +15,7 @@ function captureCallback(s) {
 
 function draw() {
   background(220);
-  image(turkey, 0, 0);
+  image(photobooth, 0, 0);
   loadPixels();
   for (let i = 0; i < pixels.length; i+=4) {
     let r = pixels[i];

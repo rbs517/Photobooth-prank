@@ -8,21 +8,26 @@
     <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
     <!-- p5 speech library --> 
     <script src="../lib/p5.speech.js"></script>
+    <!-- jQuery library --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
-    <script src="./sketch.js"></script>
+
     
 	</head>
 	<body>
-	<!-- <body onload="init()"> -->
 		<button id="call">call booth</button>
 
-		My video:
-		<video id="myvideo" width="320" height="240"></video>	
+		<!-- My video:
+		<video id="myvideo" width="320" height="240"></video> -->	
     	
     	Their Video:
+        <video id="boothvideo" width="320" height="240"></video>   
+        
+
         <script src="./watcher.js"></script>
+        <script src="./sketch.js"></script>
         
 	</body>
 </html>
